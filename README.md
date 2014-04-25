@@ -37,3 +37,10 @@ Copyright 2014 Masatoshi "yoz" Yoshizawa ( @yozjp )
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+---
+
+This code was written in thank for codes below:
+
+* Echo.ino by unknown in DigiUSB sample sketches
+* TinySoftPwmDemo.ino by RC NAVY in DigisparkTinySoftPwm sample sketch
