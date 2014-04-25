@@ -55,7 +55,7 @@ void get_input() {
       break;
     }
   }
-  // refresh the usb port for 10 milliseconds
+  // refresh the usb port for 1 milliseconds
   DigiUSB.delay(1);
 
 }
@@ -68,6 +68,7 @@ void loop()
   get_input();
 
   if( ( millis() - StartMs) >= 10) {
+    /* We arrived here every 10 milliseconds */
     StartMs = millis();
     switch( gStatus) {
     case kMODE_OFF:
@@ -80,7 +81,6 @@ void loop()
 
     case kMODE_BLINK_PB:
     case kMODE_BLINK_MB:
-      /* We arrived here every 10 milliseconds */
       Pwm += Dir; /* increment or decrement PWM depending of sign of Dir */
 
       switch( gStatus) {
